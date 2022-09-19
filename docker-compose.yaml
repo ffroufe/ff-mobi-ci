@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  filipepptest:
+    image: filipemobiapp:v1
+    build: . # calling dockerfile in current location
+    container_name: filipec1
+    ports:
+    - "8716:80"
+    restart: always
